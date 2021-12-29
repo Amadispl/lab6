@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyApi", "..\..\..\Downloads\lab6_Stage1-TodoApi\Stage1-TodoApi\TodoApiSecured\MyApi.csproj", "{FC847936-57A2-4528-88CC-A1EA125F9981}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMvc", "MyMvc\MyMvc.csproj", "{F15B8F45-BA53-4B79-B701-BD9CD23B2230}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC847936-57A2-4528-88CC-A1EA125F9981}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC847936-57A2-4528-88CC-A1EA125F9981}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC847936-57A2-4528-88CC-A1EA125F9981}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC847936-57A2-4528-88CC-A1EA125F9981}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F15B8F45-BA53-4B79-B701-BD9CD23B2230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F15B8F45-BA53-4B79-B701-BD9CD23B2230}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F15B8F45-BA53-4B79-B701-BD9CD23B2230}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F15B8F45-BA53-4B79-B701-BD9CD23B2230}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A3B3EAA-0675-496D-9212-3DA96156D28D}
+	EndGlobalSection
+EndGlobal
