@@ -6,9 +6,13 @@ using System.Threading.Tasks;
 using System.Net.Http.Json;
 using MyApi.Models;
 using System.Net.Http.Formatting;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MyMvc.Controllers
 {
+
+    [Authorize]
+
     public class GameController : Controller
     {
         private readonly HttpClient client;

@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using MyMvc.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using System.Threading.Tasks;
 
 namespace MyMvc
@@ -27,6 +28,9 @@ namespace MyMvc
         {
             services.AddControllersWithViews();
             services.AddDbContext<FakeContext>(opt => opt.UseInMemoryDatabase("fake"));
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+              .AddCookie(x => x.LoginPath = "/account/login");
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,6 +51,8 @@ namespace MyMvc
 
             app.UseRouting();
 
+           
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -55,6 +61,8 @@ namespace MyMvc
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+
         }
     }
 }
